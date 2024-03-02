@@ -104,8 +104,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-MEDIA_URL = os.path.join(BASE_DIR, 'media/')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/home/rmoktvux3m8e/public_html/stfrancisschoolkorba.ac.in/media'
+
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Password validation
