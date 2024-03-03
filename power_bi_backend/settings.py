@@ -28,9 +28,11 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'http://stfrancisschoolkorba.ac.in/',
     'stfrancisschoolkorba.ac.in/',
+    'stfrancisschoolkorba.ac.in',
     'www.stfrancisschoolkorba.ac.in/',
     '43.255.154.66',
-    'localhost'
+    'localhost',
+    '*'
 ]
 
 
