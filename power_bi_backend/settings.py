@@ -25,7 +25,7 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'o1f4ulx-7-^-h16cav4lkxvu)fjbeh!3)ijqpbr9&5w&op=axz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'http://stfrancisschoolkorba.ac.in/',
@@ -113,6 +113,12 @@ DATABASES = {
 
 # PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/rmoktvux3m8e/public_html/stfrancisschoolkorba.ac.in/static'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/home/rmoktvux3m8e/public_html/stfrancisschoolkorba.ac.in/media'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -150,7 +156,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         # 'rest_framework.authentication.TokenAuthentication',
@@ -198,10 +204,4 @@ CORS_ORIGIN_WHITELIST = (
 )
 CORS_ALLOW_CREDENTIALS = False
 
-STATIC_URL = '/static/'
-STATIC_ROOT = '/home/rmoktvux3m8e/public_html/stfrancisschoolkorba.ac.in/static'
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/rmoktvux3m8e/public_html/stfrancisschoolkorba.ac.in/media'
-
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
