@@ -9,11 +9,13 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
+from pathlib import Path
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -106,10 +108,10 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/rmoktvux3m8e/public_html/stfrancisschoolkorba.ac.in/media'
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = '/home/rmoktvux3m8e/public_html/stfrancisschoolkorba.ac.in/media'
 
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+# PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Password validation
@@ -195,3 +197,11 @@ CORS_ORIGIN_WHITELIST = (
     'localhost:4200'
 )
 CORS_ALLOW_CREDENTIALS = False
+
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/rmoktvux3m8e/public_html/stfrancisschoolkorba.ac.in/static'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/home/rmoktvux3m8e/public_html/stfrancisschoolkorba.ac.in/media'
+
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
